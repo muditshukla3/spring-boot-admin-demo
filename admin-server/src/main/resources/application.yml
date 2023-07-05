@@ -1,10 +1,18 @@
 spring:
-  security:
-    user:
-      name: "admin"
-      password: "admin@123"
+  boot:
+    admin:
+      monitor:
+        info-interval: 15m
+        status-interval: 900000ms
+        info-lifetime: 15m
+        status-lifetime: 900000ms
   application:
     name: spring-boot-admin
+  ldap:
+    embedded:
+      ldif: classpath:test-server.ldif
+      port: 8389
+      base-dn: dc=springframework,dc=org
 
 server:
   port: 8081
