@@ -3,8 +3,12 @@ spring:
     admin:
       client:
         url: http://localhost:8081
-        username: admin
-        password: admin@123
+        username: ben
+        password: benspassword
+        instance:
+          service-host-type: IP
+        period: 300000ms
+        auto-deregistration: true
 management:
   endpoints:
     web:
