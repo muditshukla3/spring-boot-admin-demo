@@ -13,6 +13,3 @@ spring:
       ldif: classpath:test-server.ldif
       port: 8389
       base-dn: dc=springframework,dc=org
-
-server:
-  port: 8081
